@@ -8,7 +8,7 @@ cl /MT /Z7 /GS- vulnerable_service.c /DFOREGROUND_MODE /DYNAMICBASE:NO /link /FI
 Compiled with Visual Studio 2003's cl.exe command in Developer Command Prompt.
 
 To completely shut it down, open a command prompt, and then:
-1. sc delete "Windows Metasploitable Door"
+1. sc delete "Buffer Overflow"
 2. taskkill /F /IM:vulnerable_service.exe
 
 */
@@ -20,8 +20,8 @@ To completely shut it down, open a command prompt, and then:
 #include <stdio.h>
 #define DEFAULT_RECV_BUFFER_LEN 1024
 #define DEFAULT_FNAME_BUFFER_SIZE 512
-#define SERVICE_NAME "Windows Metasploitable Door"
-#define SERVICE_DESCRIPTION "Custom Windows service for Metasploitable"
+#define SERVICE_NAME "Buffer Overflow"
+#define SERVICE_DESCRIPTION "Buffer Overflow"
 #define PORT 4444
 
 #pragma comment(lib, "Ws2_32.lib")
