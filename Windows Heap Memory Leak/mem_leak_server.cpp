@@ -4,6 +4,36 @@ using namespace std;
 
 #pragma comment(lib, "Ws2_32.lib")
 
+/*
+0:001> !heap -stat -h
+
+Allocations statistics for
+ heap @ 00800000
+group-by: TOTSIZE max-display: 20
+    size     #blocks     total     ( %) (percent of total busy bytes)
+    400 9c7 - 271c00  (97.63) <--- yup
+    494 10 - 4940  (0.71)
+    1ab4 1 - 1ab4  (0.26)
+    1526 1 - 1526  (0.21)
+    1000 1 - 1000  (0.16)
+    800 2 - 1000  (0.16)
+    248 7 - ff8  (0.16)
+    d0 b - 8f0  (0.09)
+    a8 b - 738  (0.07)
+    200 3 - 600  (0.06)
+    440 1 - 440  (0.04)
+    220 2 - 440  (0.04)
+    80 8 - 400  (0.04)
+    3bc 1 - 3bc  (0.04)
+    35f 1 - 35f  (0.03)
+    184 2 - 308  (0.03)
+    120 2 - 240  (0.02)
+    208 1 - 208  (0.02)
+    52 6 - 1ec  (0.02)
+    2c 9 - 18c  (0.02)
+
+*/
+
 int main(int args, char** argv) {
   /*
   *  Initialize winsock:
