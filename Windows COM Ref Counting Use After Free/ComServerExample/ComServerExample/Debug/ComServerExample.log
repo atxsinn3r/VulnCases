@@ -1,0 +1,21 @@
+﻿Build started 9/11/2018 5:23:00 PM.
+     1>Project "c:\Users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\ComServerExample\ComServerExample.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ComServerExample.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HelloWorld.cpp
+         HelloWorld.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.dll" /INCREMENTAL /NOLOGO comsvcs.lib /DEF:".\ComServerExample.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /DLL Debug\ComServerExample.res
+         Debug\ComServerExample.obj
+         Debug\ComServerExample_i.obj
+         Debug\dllmain.obj
+         Debug\HelloWorld.obj
+         Debug\stdafx.obj
+            Creating library c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.lib and object c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.exp
+         ComServerExample.vcxproj -> c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.dll
+       RegisterOutput:
+         regsvr32 /s "c:\users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\Debug\ComServerExample.dll"
+     1>Done Building Project "c:\Users\sinn3r\documents\visual studio 2013\Projects\ComServerExample\ComServerExample\ComServerExample.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.79

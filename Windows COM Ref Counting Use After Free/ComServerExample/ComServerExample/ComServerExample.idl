@@ -1,0 +1,35 @@
+// ComServerExample.idl : IDL source for ComServerExample
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (ComServerExample.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(39AF322A-A542-410B-828F-E134B95DD39D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHelloWorld : IDispatch{
+	[id(1)] HRESULT PrintSomething([in] CHAR* val);
+};
+[
+	uuid(1E0FF5B2-0BE1-49FA-9970-0EEF7912E30B),
+	version(1.0),
+]
+library ComServerExampleLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(69217890-0822-49A0-AF26-7F9195CAA59B)		
+	]
+	coclass HelloWorld
+	{
+		[default] interface IHelloWorld;
+	};
+};
+

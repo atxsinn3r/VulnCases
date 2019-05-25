@@ -1,0 +1,26 @@
+HKCR
+{
+	ComServerExample.HelloWorld.1 = s 'HelloWorld Class'
+	{
+		CLSID = s '{69217890-0822-49A0-AF26-7F9195CAA59B}'
+	}
+	ComServerExample.HelloWorld = s 'HelloWorld Class'
+	{		
+		CurVer = s 'ComServerExample.HelloWorld.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {69217890-0822-49A0-AF26-7F9195CAA59B} = s 'HelloWorld Class'
+		{
+			ProgID = s 'ComServerExample.HelloWorld.1'
+			VersionIndependentProgID = s 'ComServerExample.HelloWorld'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{1E0FF5B2-0BE1-49FA-9970-0EEF7912E30B}'
+			Version = s '1.0'
+		}
+	}
+}
