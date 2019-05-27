@@ -1,8 +1,9 @@
 # Windows Unicode Overflow
 
 This is an example of a buffer overflow due to the use of MultiByteToWideChar. This function is
-often used to convert an ANSI string to unicode, and that implies each character expands to two
-bytes. For example, this is 'A' in hex:
+used to convert an ANSI string to unicode, and that implies each character expands to two bytes.
+
+For example, this is 'A' in hex:
 
 ```
 41
