@@ -1,5 +1,7 @@
 # Windows Unicode Overflow
 
+![Screenshot](https://raw.githubusercontent.com/wchen-r7/VulnCases/master/Windows%20Unicode%20Buffer%20Overflow/Screenshot.png)
+
 This is an example of a buffer overflow due to the use of MultiByteToWideChar. This function is
 used to convert an ANSI string to unicode, and that implies each character expands to two bytes.
 Sometimes, a C/C++ programmer miscalculates this.
