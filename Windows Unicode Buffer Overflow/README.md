@@ -2,6 +2,7 @@
 
 This is an example of a buffer overflow due to the use of MultiByteToWideChar. This function is
 used to convert an ANSI string to unicode, and that implies each character expands to two bytes.
+Sometimes, a C/C++ programmer miscalculates this.
 
 For example, this is 'A' in hex:
 
