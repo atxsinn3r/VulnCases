@@ -1,5 +1,7 @@
 # Windows COM Reference Counting Use After Free
 
+![Screenshot](https://raw.githubusercontent.com/wchen-r7/VulnCases/master/Windows%20COM%20Ref%20Counting%20Use%20After%20Free/Screenshot.png)
+
 This is an example of a use after free vulnerability due to incorrect reference counting. This type
 of use after free is more common among Windows binaries, such as Internet Explorer, ActiveX, etc.
 The idea of reference counting is simple but kind of easy to make mistakes. Basically, every new
