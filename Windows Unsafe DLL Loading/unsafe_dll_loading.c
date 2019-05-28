@@ -14,6 +14,7 @@ int main(int args, char** argv) {
   }
 
   printf("Press any key to unload %s\n", MODULE_NAME);
+  system("PAUSE");
   if (!FreeLibrary(module)) {
     printf("Failed to unload\n");
   }
