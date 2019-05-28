@@ -1,5 +1,7 @@
 # Windows Heap Overflow Leak
 
+![Screenshot](https://github.com/wchen-r7/VulnCases/blob/master/Windows%20Heap%20Overflow%20Leak/Screenshot.png?raw=true)
+
 This is an example of using a heap overflow that leaks data in memory. While experimental, the
 attempt here is to create chunks hopefully like this:
 
