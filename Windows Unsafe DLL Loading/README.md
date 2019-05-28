@@ -1,5 +1,7 @@
 # Unsafe DLL Loading
 
+![Screenshot](https://raw.githubusercontent.com/wchen-r7/VulnCases/master/Windows%20Unsafe%20DLL%20Loading/Screenshot.png)
+
 This is an example of unsafe DLL loading. The EXE attempts to load a non-existent named
 HelloWorld.dll, and as you can see, Windows is looking for it in multiple places. This
 is because LoadLibrary has this search order:
