@@ -77,5 +77,5 @@ Tested on: Windows 10 as of May 29th, 2019
 
 Special thanks to the following folks:
 
-1. mr_me
-2. Corelanc0d3r
+1. mr_me : https://srcincite.io/
+2. Corelanc0d3r : https://www.corelan-training.com/
