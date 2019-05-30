@@ -1,5 +1,7 @@
 # Heap Overflow Information Leak
 
+![Screenshot](https://raw.githubusercontent.com/wchen-r7/VulnCases/master/Windows%20Heap%20Overflow%20Info%20Leak/Screenshot.png)
+
 This demonstrates how to use a heap overflow to leak something in memory on Windows 10.
 Unlike Windows 7 and Windows systems before that, exploit devs used to rely on LFH to
 create adjacent heap allocations to gain control of an object. In my experiment, about
