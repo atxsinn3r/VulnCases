@@ -79,3 +79,7 @@ Special thanks to the following folks:
 
 1. mr_me : https://srcincite.io/
 2. Corelanc0d3r : https://www.corelan-training.com/
+
+## Full Writeup
+
+https://blog.rapid7.com/2019/06/12/heap-overflow-exploitation-on-windows-10-explained/

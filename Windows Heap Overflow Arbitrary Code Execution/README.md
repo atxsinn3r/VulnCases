@@ -8,3 +8,7 @@ the source code yourself, the position of the vftable can shift (in .rdata), so 
 offset to the image address is still correct.
 
 Tested on Windows 10 as of June 2nd, 2019.
+
+## Full Writeup
+
+https://blog.rapid7.com/2019/06/12/heap-overflow-exploitation-on-windows-10-explained/
