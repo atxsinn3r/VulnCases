@@ -17,7 +17,7 @@ The server is expected to spit back your payload. So for example, if your input 
 ```ruby
 packet = ""
 packet << "\x01"             # Type
-packet << "\x00\x41"         # Size
+packet << "\x00\x04"         # Size
 packet << "\x41\x41\x41\x41" # Payload
 ```
 
