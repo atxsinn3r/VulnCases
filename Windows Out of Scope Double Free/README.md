@@ -10,9 +10,9 @@ free(buf);
 free(buf);
 ```
 
-However, a free-related bug isn't necessarily written explicitly that way. Sometimes it's due to an object's lifetime and the use of free in a destructor, which could be less obvious to spot from a larger codebase.
+However, a free-related bug isn't necessarily written explicitly that way. A scenario you may more likely run into is when an object stored on the stack goes out of scope, which triggers the destructor to kick in. If this behavior is overlooked and the destructor happens to free something, a double-free condition could occur.
 
-For example, in the DoubleFree.cpp file, the destructor is actually called twice, and you would have to see this with gflags enabled:
+For example, in the DoubleFree.cpp file, the destructor is actually called twice. Once when the Test function exits, another in the main function. The result in WinDBG with gflags enabled would look like this:
 
 ```
 0:000> g
