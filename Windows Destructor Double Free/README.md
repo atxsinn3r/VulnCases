@@ -1,4 +1,4 @@
-# Windows Destructor Double Free
+# Windows Out of Scope Object Double Free
 
 A classic example of a double free goes like this:
 
@@ -10,7 +10,7 @@ free(buf);
 free(buf);
 ```
 
-However, a free-related bug isn't necessarily written that way. Sometimes it's due to the use of a destructor, and it is less obvious to spot from a larger codebase.
+However, a free-related bug isn't necessarily written explicitly that way. Sometimes it's due to an object's lifetime and the use of free in a destructor, which could be less obvious to spot from a larger codebase.
 
 For example, in the DoubleFree.cpp file, the destructor is actually called twice, and you would have to see this with gflags enabled:
 
