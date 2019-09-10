@@ -14,7 +14,9 @@ Once extracted, the attacker could make a GET request to the PHP payload and get
 $ curl http://example.com/payload.php
 ```
 
-It seems quite a few libraries seem to overlook this so it is worth documented as a vulnerable case study. In my repository, there are a couple examples that demonstrate the problem. Since they are quite generic, they also serve as code patterns and maybe you can find more vulnerabilities on other applications that way.
+For a real world case, here's one that was found by Steven Seeley for [Cisco Prime Infrastructure's Health Monitor](https://srcincite.io/blog/2019/05/17/panic-at-the-cisco-unauthenticated-rce-in-prime-infrastructure.html) component, and I wrote a [Metasploit exploit](https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/http/cpi_tararchive_upload.rb) for it.
+
+It seems quite a few libraries still seem to overlook this so it is worth documented as a vulnerable case study. In my repository, there are a couple examples that demonstrate the problem. Since they are quite generic, they also serve as code patterns and maybe you can find more vulnerabilities on other applications that way.
 
 I wrote a [Metasploit module](https://atxsinn3r.io/exploits.html) that allows you generate this type of malicious TAR file so you can quickly test Zip Slip vulns.
 
