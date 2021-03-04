@@ -1,7 +1,7 @@
 /*
- * This example will load a custom file format and attempt to verify that a user-supplied
- * file path points a valid executable. The verification is done by calling the file
- * command, which is unsafe.
+ * This example will load a custom file format and attempt to verify that a
+ * user-supplied file path points a valid PNG. The verification is done by
+ * calling the file command, which is unsafe.
  */
 
 #include <iostream>
