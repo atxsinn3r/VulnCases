@@ -7,7 +7,9 @@ FileParser::FileParser(const char* fname) {
 bool FileParser::Validate() {
     PngFileInfo* info;
     LoadFile(&info);
-    return (CheckMagic(&info) && CheckPng(&info));
+    bool isValid = (CheckMagic(&info) && CheckPng(&info));
+    munmap(info, sizeof(PngFileInfo));
+    return isValid;
 }
 
 void FileParser::LoadFile(PngFileInfo** info) {
@@ -20,7 +22,6 @@ void FileParser::LoadFile(PngFileInfo** info) {
         throw std::runtime_error("Mapping failed");
     }
     close(f);
-    munmap((void*) f, sizeof(PngFileInfo));
 }
 
 bool FileParser::CheckPng(PngFileInfo** info) {
