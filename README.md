@@ -11,11 +11,12 @@ I want to practice some C/C++ vulnerabilities that are based on real world probl
 * Use after free
 * Memroy leak
 * Off by one problems
+* Format string problems
 * Integer overflow
 * Integer underflow
 * Type confusion
 
-The difficulty of the tests range from 1 to 10. 1 being the easiest, 10 being the hardest. Start with level 1. If I get the answer right at first try for a few times in a row, gradually increase the level of difficulty for that type of vulnerability, and move on to the next test. If I get it wrong for three times in a row, tell me the answer, gradually decrease the level of difficulty, and move on to the next test. Don't tell me how difficult it is in the test, but if my level of difficulty has changed, let me know what it is.
+The difficulty of the tests ranges from 1 to 10. 1 being the easiest, 10 being the hardest. Start with level 1. If I get the answer right at first try for a few times in a row, gradually increase the level of difficulty for that type of vulnerability, and move on to the next test. If I get it wrong for three times in a row, tell me the answer, gradually decrease the level of difficulty, and move on to the next test. Don't tell me how difficult it is in the test, but if my level of difficulty has changed, let me know what it is.
 
 In the test, ask me to explain what the problem is with some details. Don't give me any hints. No comments in the code snippet.
 
