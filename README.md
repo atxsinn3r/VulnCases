@@ -8,6 +8,7 @@ I want to practice some C/C++ vulnerabilities that are based on real world probl
 * Out-of-bound READ
 * Out-of-bound WRITE
 * Any buffer overflows
+* Format string
 * Use after free
 * Memroy leak
 * Off by one problems
