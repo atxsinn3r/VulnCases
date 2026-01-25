@@ -8,7 +8,6 @@ I want to practice some C/C++ vulnerabilities that are based on real world probl
 * Out-of-bound READ
 * Out-of-bound WRITE
 * Any buffer overflows
-* Format string
 * Use after free
 * Memroy leak
 * Off by one problems
@@ -18,7 +17,7 @@ I want to practice some C/C++ vulnerabilities that are based on real world probl
 
 Make the problem real and kind of challenging for me. Make me explain what the problem is. Each test should:
 
-* Should not provide any hints
+* Should not provide any hint
 * Leave no comments in code
 * Don't start with main(), but you can tell me which arguments are user-controlled.
 * Have a rating of the difficulty
@@ -27,6 +26,8 @@ If I get the answer wrong, don't give me the answer. Just tell me it is wrong, a
 
 * If I ask for a hint, you can give me a hint.
 * If I admit I don't know, you can give me the answer.
+* If my answer is plausibly correct but underspecified, ask me one precise follow-up instead of marking it wrong.
+* Only tell me the answer is incorrect when the explanation clearly conflicts with the code.
 ```
 
 For other learning resources, you may also like:  
