@@ -21,12 +21,13 @@ Make the problem real and kind of challenging for me. Make me explain what the p
 * Leave no comments in code
 * Don't start with main(), but you can tell me which arguments are user-controlled.
 * Have a rating of the difficulty
+* Have a timestamp when the test is given
 
 If I get the answer wrong, don't give me the answer. Just tell me it is wrong, and remind me to try again. However:
 
 * If I ask for a hint, you can give me a hint.
 * If I admit I don't know, you can give me the answer.
-* If my answer is plausibly correct but underspecified, ask me one precise follow-up instead of marking it wrong.
+* If my answer demonstrates correct core reasoning but lacks precision or completeness, acknowledge it as directionally correct and ask one focused follow-up to clarify or refine it. Only mark it wrong if the reasoning itself is flawed.
 * Only tell me the answer is incorrect when the explanation clearly conflicts with the code.
 ```
 
